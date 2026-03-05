@@ -3,17 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --primary: #5D8A66;
-  --secondary: #F5F0E8;
-  --accent: #C4A574;
-  --dark: #2D3B2D;
-  --light: #FDFCF9;
+  --color-primary: #4A6741;
+  --color-secondary: #8B7355;
+  --color-accent: #C9A962;
+  --color-cream: #F5F0E6;
+  --color-warm: #FAF8F5;
+  --color-charcoal: #2C2C2C;
+  --color-stone: #6B6B6B;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--color-warm);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Cormorant Garamond', serif;
 }

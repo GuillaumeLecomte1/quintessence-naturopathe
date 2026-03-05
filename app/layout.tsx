@@ -1,24 +1,20 @@
-import './globals.css';
 import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Delphine BAUMONT - Naturopathe à Roppe | Quintessence',
-  description: 'Consultations en naturopathie à Roppe (90380). Delphine BAUMONT vous accompagne naturellement pour retrouver votre bien-être.',
+  title: 'Quintessence - Delphine BAUMONT | Naturopathe a Roppe',
+  description: 'Naturopathe certified FENA a Roppe. Consultations personnalisees.',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-sans">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
