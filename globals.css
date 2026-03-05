@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #5D8A66;
+  --secondary: #F5F0E8;
+  --accent: #C4A574;
+  --dark: #2D3B2D;
+  --light: #FDFCF9;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
