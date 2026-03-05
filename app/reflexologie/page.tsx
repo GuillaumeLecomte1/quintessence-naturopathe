@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function Naturopathie() {
+export default function Reflexologie() {
   return (
     <div className="min-h-screen bg-[#F8F4EF]">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#F8F4EF]/95 backdrop-blur-sm border-b border-[#2D4A3E]/5">
@@ -11,7 +11,8 @@ export default function Naturopathie() {
               <span className="font-display text-2xl text-[#2D4A3E] tracking-wide">Quintessence</span>
             </Link>
             <div className="hidden md:flex items-center gap-10">
-              <Link href="/naturopathie" className="text-[#2D4A3E] text-sm tracking-wide font-medium">NATUROPATHIE</Link>
+              <Link href="/naturopathie" className="text-[#1A1A1A]/70 hover:text-[#2D4A3E] text-sm tracking-wide">NATUROPATHIE</Link>
+              <Link href="/reflexologie" className="text-[#2D4A3E] text-sm tracking-wide font-medium">RÉFLEXOLOGIE</Link>
               <Link href="/a-propos" className="text-[#1A1A1A]/70 hover:text-[#2D4A3E] text-sm tracking-wide">À PROPOS</Link>
               <Link href="/contact" className="bg-[#2D4A3E] text-white px-7 py-2.5 text-sm tracking-wide hover:bg-[#1A1A1A]">
                 CONTACT
@@ -23,13 +24,12 @@ export default function Naturopathie() {
 
       <section className="pt-32 pb-16 px-6">
         <div className="max-w-7xl mx-auto">
-          <p className="text-[#C4915E] text-xs tracking-[0.3em] uppercase mb-4">NATUROPATHIE</p>
+          <p className="text-[#C4915E] text-xs tracking-[0.3em] uppercase mb-4">RÉFLEXOLOGIE</p>
           <h1 className="font-display text-5xl lg:text-6xl text-[#1A1A1A] mb-8">
-            Retrouver l'équilibre<br/>naturellement
+            L'art naturel du bien-être
           </h1>
           <p className="text-[#6B6B6B] text-lg max-w-2xl leading-relaxed">
-            Reconnue par l'Organisation Mondiale de la Santé, la naturopathie est une approche globale 
-            qui considère la personne dans sa totalité — corps, esprit et émotions.
+            La réflexologie est une méthode naturelle et manuelle qui aide le corps à libérer ses facultés d'auto-régulation.
           </p>
         </div>
       </section>
@@ -40,28 +40,20 @@ export default function Naturopathie() {
             <div>
               <h2 className="font-display text-3xl text-[#1A1A1A] mb-6">Une approche globale</h2>
               <p className="text-[#6B6B6B] leading-relaxed mb-6">
-                La naturopathie vise à préserver et optimiser la santé globale de l'individu et à soutenir 
-                les capacités naturelles d'auto-régulation de l'organisme grâce à des moyens naturels.
-              </p>
-              <p className="text-[#6B6B6B] leading-relaxed mb-6">
-                Le naturopathe cherche toujours l'origine du déséquilibre. Il ne se contente pas de proposer 
-                une solution ponctuelle : il identifie les causes profondes afin d'apporter un mieux-être durable.
+                En stimulant des points réflexes situés sur les pieds, les mains, le visage ou le crâne, cette approche douce agit sur l'ensemble des organes et fonctions du corps.
               </p>
               <p className="text-[#6B6B6B] leading-relaxed">
-                Chaque accompagnement est personnalisé. Le naturopathe analyse le terrain individuel, les habitudes 
-                de vie, l'alimentation, l'environnement et les émotions.
+                Grâce à des pressions précises et adaptées, la réflexologie procure une détente profonde, favorise la récupération et soutient la prévention de nombreux troubles.
               </p>
             </div>
             <div>
-              <h2 className="font-display text-3xl text-[#1A1A1A] mb-6">Pourquoi consulter ?</h2>
+              <h2 className="font-display text-3xl text-[#1A1A1A] mb-6">Les techniques</h2>
               <ul className="space-y-4">
                 {[
-                  'Prévention et hygiène de vie',
-                  'Mieux-être général et énergie',
-                  'Gestion du stress et des émotions',
-                  'Troubles digestifs',
-                  'Sommeil et fatigue',
-                  'Équilibre hormonal'
+                  'Réflexologie plantaire',
+                  'Réflexologie palmaire', 
+                  'Réflexologie crânio-faciale',
+                  'Points Knap'
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3">
                     <span className="w-2 h-2 bg-[#2D4A3E] rounded-full"></span>
@@ -77,21 +69,16 @@ export default function Naturopathie() {
       <section className="py-16 bg-[#F8F4EF]">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="font-display text-3xl text-[#1A1A1A] mb-10 text-center">Tarifs</h2>
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
             <div className="bg-white p-8 rounded-2xl text-center">
-              <h3 className="font-display text-xl text-[#1A1A1A] mb-2">Bilan initial</h3>
-              <p className="text-[#6B6B6B] text-sm mb-4">1h30</p>
-              <p className="text-4xl font-display text-[#2D4A3E]">70€</p>
-            </div>
-            <div className="bg-white p-8 rounded-2xl text-center">
-              <h3 className="font-display text-xl text-[#1A1A1A] mb-2">Suivi</h3>
+              <h3 className="font-display text-xl text-[#1A1A1A] mb-2">Séance</h3>
               <p className="text-[#6B6B6B] text-sm mb-4">1h</p>
               <p className="text-4xl font-display text-[#2D4A3E]">55€</p>
             </div>
             <div className="bg-white p-8 rounded-2xl text-center">
               <h3 className="font-display text-xl text-[#1A1A1A] mb-2">Forfait</h3>
               <p className="text-[#6B6B6B] text-sm mb-4">3 séances</p>
-              <p className="text-4xl font-display text-[#2D4A3E]">160€</p>
+              <p className="text-4xl font-display text-[#2D4A3E]">150€</p>
             </div>
           </div>
         </div>
@@ -99,8 +86,8 @@ export default function Naturopathie() {
 
       <section className="py-16 bg-[#2D4A3E] text-white text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="font-display text-3xl mb-4">Vous souhaitez consulter ?</h2>
-          <p className="text-white/70 mb-8">Je vous invite à me contacter pour une première consultation personnalisée.</p>
+          <h2 className="font-display text-3xl mb-4">Vous souhaitez essayer ?</h2>
+          <p className="text-white/70 mb-8">Contactez-moi pour une première séance.</p>
           <Link href="/contact" className="inline-block bg-white text-[#2D4A3E] px-10 py-4 text-sm tracking-wide hover:bg-[#F8F4EF] transition-colors">
             PRENDRE RENDEZ-VOUS
           </Link>
